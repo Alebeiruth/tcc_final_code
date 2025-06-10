@@ -22,5 +22,5 @@ jupyter==1.0.0
 ipykernel==6.25.0
 
 # Para experimentos
-mlflow==2.7.1
+mlflow==2.20.3
 wandb==0.15.12
