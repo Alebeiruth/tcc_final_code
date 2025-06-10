@@ -1,0 +1,19 @@
+================================================================================
+RELATÓRIO ESTRATÉGIA 1: CROSS-DATASET DRIFT ANALYSIS
+================================================================================
+
+ESTATÍSTICAS DE EXECUÇÃO:
+----------------------------------------
+Imagens processadas: 3582
+Tempo de extração: 39.49s
+Experimentos totais: 390
+Folds LOSO: 384
+Experimentos cross-dataset: 6
+
+RESULTADOS CONSOLIDADOS:
+----------------------------------------
+Performance Intra-dataset (LOSO):
+   JAFFE: 0.262 ± 0.000
+   CK+: 0.594 ± 0.000
+
+Performance Cross-dataset:

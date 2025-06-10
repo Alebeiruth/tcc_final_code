@@ -1,0 +1,103 @@
+{
+  "strategy": "Cross-Dataset Drift Analysis",
+  "datasets": [
+    "jaffe",
+    "ck+"
+  ],
+  "execution_stats": {
+    "feature_extraction": {
+      "total_images_processed": 3582,
+      "total_extraction_time_seconds": 39.486066579818726,
+      "avg_time_per_image": 0.011023469173595401,
+      "max_memory_usage_mb": 210.4296875,
+      "total_processing_errors": 0
+    },
+    "validation": {
+      "total_experiments": 390,
+      "loso_folds_executed": 384,
+      "cross_dataset_experiments": 6,
+      "seeds_processed": 3
+    },
+    "resource_usage": {},
+    "summary": {
+      "strategy": "Cross-Dataset Drift Analysis",
+      "datasets_analyzed": [
+        "jaffe",
+        "ck+"
+      ],
+      "total_images": 3582,
+      "total_experiments": 390,
+      "execution_successful": true
+    },
+    "total_execution_time": 689.9060997962952
+  },
+  "consolidated_results": {
+    "intra_dataset_average": {
+      "jaffe": {
+        "mean_accuracy": 0.2617391304347826,
+        "std_accuracy": 0.0,
+        "individual_seeds": [
+          0.2617391304347826,
+          0.2617391304347826,
+          0.2617391304347826
+        ],
+        "n_seeds": 3
+      },
+      "ck+": {
+        "mean_accuracy": 0.5944444444444443,
+        "std_accuracy": 0.0,
+        "individual_seeds": [
+          0.5944444444444443,
+          0.5944444444444443,
+          0.5944444444444443
+        ],
+        "n_seeds": 3
+      }
+    },
+    "cross_dataset_average": {
+      "jaffe\u2192ck+": {
+        "mean_accuracy": 0.05504587155963303,
+        "std_accuracy": 0.0,
+        "individual_seeds": [
+          0.05504587155963303,
+          0.05504587155963303,
+          0.05504587155963303
+        ],
+        "n_seeds": 3
+      },
+      "ck+\u2192jaffe": {
+        "mean_accuracy": 0.13615023474178403,
+        "std_accuracy": 0.0,
+        "individual_seeds": [
+          0.13615023474178403,
+          0.13615023474178403,
+          0.13615023474178403
+        ],
+        "n_seeds": 3
+      }
+    },
+    "drift_analysis_average": {
+      "mean_drift_percentage": 77.66879534819537,
+      "std_drift_percentage": 0.0,
+      "individual_seeds": [
+        77.66879534819537,
+        77.66879534819537,
+        77.66879534819537
+      ],
+      "n_seeds": 3
+    },
+    "seed_consistency": {
+      "intra_dataset_cv": {
+        "jaffe": 0.0,
+        "ck+": 0.0
+      },
+      "cross_dataset_cv": {
+        "jaffe\u2192ck+": 0.0,
+        "ck+\u2192jaffe": 0.0
+      },
+      "overall_stability": "ALTA",
+      "average_cv": 0.0
+    }
+  },
+  "timestamp": "2025-06-08 21:22:47"
+}

@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  tcc-jupyter:
+    build: .
+    container_name: tcc-analysis
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./data:/app/data:ro # Datasets (só leitura)
+      - ./notebooks:/app/notebooks # Notebooks (escrita)
+      - ./results:/app/results # Resultados (escrita)
+    environment:
+      - JUPYTER_ENABLE_LAB=yes

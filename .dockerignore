@@ -1,0 +1,35 @@
+# Ambientes virtuais
+venv/
+.env
+
+# Dados grandes (montar via volume)
+data/ck+/
+data/jaffe/
+data/FER2013/
+data/RAF-DB/
+
+# Resultados (montar via volume)
+results/
+experiments/
+
+# Cache e temporários
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
+
+# IDE
+.vscode/
+.idea/
+
+# Git
+.git/
+.gitignore
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Sistema
+.DS_Store
+Thumbs.db
